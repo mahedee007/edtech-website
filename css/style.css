@@ -4,3 +4,28 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+.carousel-item {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity by changing the alpha value */
+  }
+.carousel-image {
+    height: 700px; /* Adjust the height as per your requirement */
+    object-fit: cover; /* Ensures the image scales within the container while preserving aspect ratio */
+  }
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; 
+  }
+  
+  
