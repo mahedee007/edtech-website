@@ -30,5 +30,30 @@ body{
   .course-section{
     margin-top: 130px;
   }
+  .story-bg{
+    background-color:#F4FAFD;
+  }
+  .long-paragraph {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show before truncating */
+    -webkit-box-orient: vertical;
+  }
+  
+  .collapse-toggle {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  @media (min-width: 576px){
+    .long-paragraph {
+      -webkit-line-clamp: unset; /* Reset line clamp for larger screens */
+    }
+  
+    .collapse-toggle {
+      display: none; /* Hide "See more" link for larger screens */
+    }
+  }
   
   
